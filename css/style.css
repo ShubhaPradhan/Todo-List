@@ -1,0 +1,74 @@
+body {
+  background-image: linear-gradient(
+    to right top,
+    #6bd1b5,
+    #4ecdc8,
+    #3bc7d8,
+    #42bfe4,
+    #5db6ea,
+    #61b9ef,
+    #65bcf3,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+h1 {
+  color: white;
+}
+.addButton {
+  background: #383838;
+  color: #fff;
+}
+.addButton:hover {
+  background: #383838;
+  color: #fff;
+}
+.newTodo {
+  display: flex;
+  margin-top: 0.2rem;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+li.todo-list {
+  margin-right: auto;
+  font-size: 1.2rem;
+  padding: 0.1rem 0.6rem;
+  color: #000;
+}
+button.btn {
+  box-shadow: none;
+}
+button > i {
+  pointer-events: none;
+}
+button.btn:focus {
+  box-shadow: none;
+}
+button.completedTodo {
+  background-color: rgb(56, 238, 11);
+  color: #fff;
+  border-radius: 0rem !important;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+button.deleteTodo {
+  background-color: rgb(255, 115, 0);
+  color: #fff;
+  margin-left: -0.1rem;
+  border-radius: 0rem !important;
+}
+.deleted {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
